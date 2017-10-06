@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_briefcase_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <io.cocum.android.Typeface.TypeFacedTextViewMedium
+                android:id="@+id/tv_officeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Office Name"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/primaryText"
+                android:textSize="15sp" />
+
+            <io.cocum.android.Typeface.TypeFacedTextViewMedium
+                android:id="@+id/tv_officeAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="Qubix IT Park, Blue Ridge Approach Rd, Hinjawadi Rajiv Gandhi Infotech Park, Hinjawadi, Phase 1, Pune, Maharashtra 411057"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/sort_divider"
+                android:layout_width="match_parent"
+                android:layout_height=".1dp"
+                android:layout_marginTop="10dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_officeLat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_officeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_officeLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_officeCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_officeState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_officeCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rv_first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical">
+
+            <io.cocum.android.Typeface.TypeFacedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Co-Cum"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <io.cocum.android.Typeface.TypeFacedTextView
+                android:id="@+id/name_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="What's your good name?"
+                android:textColor="@color/primaryText"
+                android:textSize="26sp" />
+
+            <io.cocum.android.Typeface.TypeFacedEditText
+                android:id="@+id/et_employee_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_title"
+                android:layout_marginTop="5dp"
+                android:hint="Enter Your Name"
+                android:inputType="text"
+                android:paddingBottom="12dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true">
+
+            <io.cocum.android.Typeface.TypeFacedButtonBold
+                android:id="@+id/name_btn"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="0dp"
+                android:background="?attr/selectableItemBackground"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv_second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_first_layout"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical">
+
+            <io.cocum.android.Typeface.TypeFacedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In Office"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <io.cocum.android.Typeface.TypeFacedTextView
+                android:id="@+id/tv_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="What's your corporate email?"
+                android:textColor="@color/primaryText"
+                android:textSize="26sp" />
+
+            <io.cocum.android.Typeface.TypeFacedEditText
+                android:id="@+id/et_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_title"
+                android:layout_marginTop="5dp"
+                android:hint="Enter Your Email"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="12dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true">
+
+            <io.cocum.android.Typeface.TypeFacedButtonBold
+                android:id="@+id/btn_sign_up"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Proceed"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

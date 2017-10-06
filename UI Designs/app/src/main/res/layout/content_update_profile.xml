@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rv_first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <io.cocum.android.Typeface.TypeFacedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Co-Cum"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <io.cocum.android.Typeface.TypeFacedTextView
+                    android:id="@+id/name_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Tell us something about you"
+                    android:textColor="@color/primaryText"
+                    android:textSize="26sp" />
+
+                <io.cocum.android.Typeface.TypeFacedEditText
+                    android:id="@+id/et_office_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_title"
+                    android:layout_marginTop="5dp"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:hint="Select Your Office"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/primaryText"
+                    android:textSize="16sp" />
+
+                <io.cocum.android.Typeface.TypeFacedEditText
+                    android:id="@+id/et_office_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_title"
+                    android:layout_marginTop="5dp"
+                    android:hint="Office Name"
+                    android:inputType="textCapWords"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/primaryText"
+                    android:textSize="16sp" />
+
+
+                <io.cocum.android.Typeface.TypeFacedEditText
+                    android:id="@+id/et_home_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_title"
+                    android:layout_marginTop="5dp"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:hint="Select nearby stop from your home"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/primaryText"
+                    android:textSize="16sp" />
+
+                <io.cocum.android.Typeface.TypeFacedEditText
+                    android:id="@+id/et_contact_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_title"
+                    android:layout_marginTop="5dp"
+                    android:hint="Contact no."
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/primaryText"
+                    android:textSize="16sp" />
+
+                <io.cocum.android.Typeface.TypeFacedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="5dp"
+                    android:text="Gender"
+                    android:textColor="@color/primaryText"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp">
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorAccent">
+
+            <io.cocum.android.Typeface.TypeFacedButtonBold
+                android:id="@+id/btn_update"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="8dp"
+            app:srcCompat="@drawable/ic_stop_point_mark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <io.cocum.android.Typeface.TypeFacedTextViewMedium
+                android:id="@+id/tv_pointName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Point Name"
+                android:textColor="@color/primaryText"
+                android:textSize="15sp" />
+
+            <io.cocum.android.Typeface.TypeFacedTextViewMedium
+                android:id="@+id/tv_pointAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="Address: Akansha residency, Aundh gaon, Near parihar chowk, Aundh, Pune MH 411007"
+
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/sort_divider"
+                android:layout_width="match_parent"
+                android:layout_height=".1dp"
+                android:layout_marginTop="10dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_pointLat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_pointId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_pointLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

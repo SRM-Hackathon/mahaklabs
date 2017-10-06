@@ -1,0 +1,198 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <io.cocum.android.Typeface.TypeFacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Co-Cum"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <io.cocum.android.Typeface.TypeFacedTextView
+            android:id="@+id/name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="We need your permissions"
+            android:textColor="@color/primaryText"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_rideMode"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="3dp"
+                app:srcCompat="@drawable/ic_location" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <io.cocum.android.Typeface.TypeFacedTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Location permission"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primaryText"
+                    android:textSize="12sp" />
+
+                <io.cocum.android.Typeface.TypeFacedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Allow Co-Cum to access GPS location which enables you to experience and automated rich experience"
+                    android:textColor="@color/primaryText"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="3dp"
+                app:srcCompat="@drawable/ic_call" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <io.cocum.android.Typeface.TypeFacedTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Read Phone state and Contacts"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primaryText"
+                    android:textSize="12sp" />
+
+                <io.cocum.android.Typeface.TypeFacedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Allow Co-Cum to access Phone state which enables you to experience and automated experience"
+                    android:textColor="@color/primaryText"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="3dp"
+                app:srcCompat="@drawable/ic_message" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <io.cocum.android.Typeface.TypeFacedTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Message Permission"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primaryText"
+                    android:textSize="12sp" />
+
+                <io.cocum.android.Typeface.TypeFacedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Allow Co-Cum for message permission for auto detect experience which enables you to experience and automated experience"
+                    android:textColor="@color/primaryText"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right"
+                app:srcCompat="@drawable/ic_contact" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <io.cocum.android.Typeface.TypeFacedTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Contact permission"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primaryText"
+                    android:textSize="12sp" />
+
+                <io.cocum.android.Typeface.TypeFacedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Allow Co-Cum to access Contacts which enables you to experience and automated search experience"
+                    android:textColor="@color/primaryText"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="60dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="55dp">
+
+            <io.cocum.android.Typeface.TypeFacedTextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:text="Enabling permissions means you agree's Mahak Labs policy"
+                android:textAllCaps="true"
+                android:textColor="@color/primaryText"
+                android:textSize="9sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
